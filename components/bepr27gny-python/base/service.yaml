@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: bepr27gny-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: bepr27gny-python 
+  name: bepr27gny-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: bepr27gny-python 
